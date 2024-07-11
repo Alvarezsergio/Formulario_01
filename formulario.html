@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>Formulario de Datos Personales</h1>
-        <form id="form" onsubmit="handleSubmit(event)">
-            <span>
-                <label for="name">Nombre: </label>
-                <input type="text" id="name" required>
-                
-            </span>
+      <h1>Formulario de Datos Personales</h1>
+      <form id="form" onsubmit="handleSubmit(event)">
+        <span>
+          <label for="name">Nombre: </label>
+          <input type="text" id="name" required />
+        </span>
 
-            <span>
-                <label for="lastname">Apellido: </label>
-                <input type="text" id="lastname" required>
-                
-            </span>
+        <span>
+          <label for="lastname">Apellido: </label>
+          <input type="text" id="lastname" required />
+        </span>
 
-            <span>
-                <label for="email">Email: </label>
-                <input type="email" id="email" required>
-                
-            </span>
+        <span>
+          <label for="email">Email: </label>
+          <input type="email" id="email" required />
+        </span>
 
-            <span>
-                <label for="dateOfBirth">Fecha de nacimiento: </label>
-                <input type="date" id="dateOfBirth" required>
-                
-            </span>
+        <span>
+          <label for="dateOfBirth">Fecha de nacimiento: </label>
+          <input type="date" id="dateOfBirth" required />
+        </span>
 
-            <span>
-                <label for="country">Pais de residencia: </label>
-                <select id="country" required>
-                    <option value="">-- Seleccione --</option>
-                    <option value="1">Argentina</option>
-                    <option value="2">Brasil</option>
-                    <option value="3">Uruguay</option>
-                    <option value="4">Chile</option>
-                </select>
-                
-            </span>
+        <span>
+          <label for="country">Pais de residencia: </label>
+          <select id="country" required>
+            <option value="">-- Seleccione --</option>
+            <option value="1">Argentina</option>
+            <option value="2">Brasil</option>
+            <option value="3">Uruguay</option>
+            <option value="4">Chile</option>
+          </select>
+        </span>
 
-            <button class="submit_btn" type="submit">Enviar</button>
-        </form>
+        <button class="submit_btn" type="submit">Enviar</button>
+      </form>
 
-        <div class="footer_buttons_container">
-            <button class="submit_btn" onclick="lightMode()">Estilo 1</button>
-            <button class="submit_btn" onclick="darkMode()">Estilo de alto contraste</button>
-        </div>
-
+      <div class="footer_buttons_container">
+        <button class="submit_btn" onclick="lightMode()">Estilo 1</button>
+        <button class="submit_btn" onclick="darkMode()">
+          Estilo de alto contraste
+        </button>
+      </div>
     </main>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
