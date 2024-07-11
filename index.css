@@ -1,0 +1,90 @@
+:root {  
+    --blue-color: #0B5ED7;
+    --yellow-color: #ffcf3f;
+    --bg-form-color: rgb(34, 33, 33);
+    --bg-input-color: rgb(59, 56, 56);
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      background-color: lightgray;
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 1rem;
+      font-family: sans-serif;
+      text-align: center;
+  }
+  
+  input {
+      padding: 0.5rem;
+      width: 100%;
+      height: 2rem;
+  }
+  
+  select {
+      padding: 0.5rem;
+      width: 100%;
+      height: 2rem;
+  }
+  
+  form {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+  
+      background-color: white;
+      padding: 1rem;
+      gap: 1rem;
+      max-width: max-content;
+      margin-inline: auto;
+      height: max-content;
+  }
+  
+  span {
+      text-align: left;
+      width: 100%;
+  }
+  
+  .submit_btn {
+      padding: 0.5rem 1rem;
+      width: 100%;
+      background: var(--blue-color);
+      color: white;
+  }
+  
+  .dark {
+      background-color: black;
+      color: white;
+  }
+  
+  .dark_form {
+      background-color: var(--bg-form-color);
+      color: white;
+  }
+  
+  .dark_input {
+      background-color: var(--bg-input-color);
+      color: white;
+  }
+  
+  .dark_btn {    
+      background-color: var(--yellow-color);
+      color: #000;
+  }
+  
+  .footer_buttons_container{
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      justify-content: center;
+      flex-direction: column;
+      max-width: max-content;
+      margin-inline: auto;
+      height: max-content;
+  }
